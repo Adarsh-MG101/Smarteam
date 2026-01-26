@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@source "./**/*.{js,ts,jsx,tsx,mdx}";
+@source "../../node_modules/lucide-react/dist/esm/**/*.js";
+
+
+@theme {
+  --color-brand-purple: #9333ea;
+  --color-brand-blue: #2563eb;
+}
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-50 antialiased selection:bg-purple-500/30;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+}
